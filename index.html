@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <!-- <h1>CV</h1> -->
+            <h2>Stefania <span>Popa</span></h2>
+            <img src="selfie.jpeg" width="100" alt="">
+
+            <p id="job-title">Web Developer</p>
+        </div>
+
+        <ul id="top-menu-bar">
+            <li><a href="#" onclick="showHome()">Home</a></li>
+            <li><a href="#" onclick="showSkills()">Skills</a></li>
+            <li><a href="#" onclick="showProjects()">Projects</a></li>
+            <li><a href="#" onclick="showLanguages()">Languages</a></li>
+
+        </ul>
+    </header>
+
+    <section id="content">
+        <div id="side-menu">
+            <section>
+                <form action="">
+                    <label for="e">Email</label>
+                    <input type="email" id="e" name="em">
+                    <input type="text" id="name" name="nume" placeholder="Your Name">
+                    <button>
+                        Contact Us
+                    </button>
+                </form>
+            </section>
+            <section>...</section>
+        </div>
+        <div id="main">
+            <div id="home" class="page">
+                <h2>Home</h2>
+                Bun venit pe pagina mea. 
+
+            </div>
+
+            <div id="skills" class="page" style="display: none;">
+                <h2>Skills & Endorcement</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li class="favorite">CSS</li>
+                    <li class="favorite">JavaScript</li>
+                    <li>Java</li>
+                </ul>
+            </div>
+
+            <div id="project" class="page" style="display: none;">
+                <h2>Projects</h2>
+            </div>
+
+            <div id="languages" class="page" style="display: none;">
+                <h2>Known Languages</h2>
+                <table border="1">
+
+                    <tr>
+                        <td>Engleza</td>
+                        <td>Mediu</td>
+                    </tr>
+                    <tr>
+                        <td>Romana</td>
+                        <td>Matern</td>
+                    </tr>
+                    <tr>
+                        <td>Franceza</td>
+                        <td>Incepator</td>
+                    </tr>
+                </table><br>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <a target="_blank" href="https://fasttrackit.org/curs-web-cluj-napoca/">Link Fasttreckit</a>
+    </footer>
+
+    <script src="functions.js"></script>
+
+    <script>
+        // console.info("salut!");
+        // var name = "Stefania";
+        // console.info(name);
+        // var skills = ["html", "css", "js"];
+        // console.info(skills);
+    </script>
+</body>
+
+</html>
