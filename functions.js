@@ -1,7 +1,7 @@
 function hide(id){
     // document.getElementById(id).style.display = 'none';
     var el = document.getElementById(id);
-    console.info("hide" + id, el);
+    //console.info("hide" + id, el);
     if (el){
         el.style.display="none";
     } else {
@@ -10,10 +10,12 @@ function hide(id){
 }
 
 function hideAllPages(){
-    hide("home");
-    hide("languages");
-    hide("project");
-    hide("skills");
+     var pages = document.querySelectorAll(".page");
+    for (var i=0; i < pages.length; i++){
+        console.info("i=", i, pages[i]);
+        var id =pages[i].id;
+        hide(id);
+    }
 }
 
 function showHome(){
