@@ -12,7 +12,7 @@ body{
 #top-menu-bar{
     color: #fff;
     text-align: center;
-    background-color: #334455;
+    background-color: #334455;     
 }
 
 #top-menu-bar li{
@@ -23,8 +23,10 @@ body{
 
 #top-menu-bar a{
     text-decoration: none;
-    padding: 0 15px 0 15px;
+    padding: 5px 15px 5px 15px;
+    margin: 2px 0;
     color: #fff;
+    display: inline-block;
 }
 
 #top-menu-bar a:visited {
@@ -111,4 +113,12 @@ header > div{
 
 footer{ 
     min-height: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: #f5f5f5;
+}
+
+footer a{
+    color: #f5f5f5;
 }
