@@ -5,14 +5,21 @@ body{
 }
 
 #job-title{
-    color: blue;
+    font-size: 30px;
+    background: linear-gradient(to top, #ff8a00,#e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: right;
+}
+
+img {
+    margin: 5px 0;
 }
 
 #top-menu-bar{
     color: #fff;
     text-align: center;
-    background-color: #334455;     
+    background: linear-gradient(to right,#ff8a00,#e52e71);
 }
 
 #top-menu-bar li{
@@ -23,7 +30,7 @@ body{
 
 #top-menu-bar a{
     text-decoration: none;
-    padding: 5px 15px 5px 15px;
+    padding: 7px 15px 7px 15px;
     margin: 2px 0;
     color: #fff;
     display: inline-block;
@@ -105,6 +112,27 @@ header > div{
 #side-menu{
     flex: 1;
     padding: 5px;
+}
+
+#side-menu > section input{
+    width: 90%;
+    padding: 3px 5px;
+    margin: 5px 0;
+    box-sizing: border-box;  
+}
+ 
+button {
+    color: white;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    border-color:#ff8a00;
+    background: linear-gradient(to right,#ff8a00,#e52e71);
+}
+
+button: hover{
+    border-color: #ff8a00;
+    background: linear-gradient(to right, #ff8a00, #e52e71);
 }
 
 #main {
