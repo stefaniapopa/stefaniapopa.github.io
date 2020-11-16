@@ -1,11 +1,9 @@
 function hide(id) {
-    // document.getElementById(id).style.display = 'none';
     var el = document.getElementById(id);
-    //console.info("hide" + id, el);
     if (el) {
         el.style.display = "none";
     } else {
-        // console.error("elementul nu exista"); 
+        console.error("elementul nu exista"); 
     }
 }
 
@@ -24,18 +22,3 @@ function showPage(pageId) {
     document.getElementById(pageId).style.display = "";
 }
 
-function showHome() {
-    showPage("home");
-}
-
-function showSkills() {
-    showPage("skills")
-}
-
-function showProjects() {
-    showPage("project");
-}
-
-function showLanguages() {
-    showPage("languages");
-}
