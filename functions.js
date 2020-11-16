@@ -9,14 +9,6 @@ function hide(id) {
     }
 }
 
-function show(id) {
-    var elm = document.getElementById(id);
-    if (elm) {
-        elm.style.display = '';
-    }
-}
-
-
 function hideAllPages() {
     var pages = document.querySelectorAll(".page");
     for (var i = 0; i < pages.length; i++) {
@@ -27,22 +19,23 @@ function hideAllPages() {
 }
 
 
-function showHome() {
+function showPage(pageId) {
     hideAllPages();
-    show("home");
+    document.getElementById(pageId).style.display = "";
+}
+
+function showHome() {
+    showPage("home");
 }
 
 function showSkills() {
-    hideAllPages();
-    show("skills")
+    showPage("skills")
 }
 
 function showProjects() {
-    hideAllPages();
-    show("project");
+    showPage("project");
 }
 
 function showLanguages() {
-    hideAllPages();
-    show("languages");
+    showPage("languages");
 }
