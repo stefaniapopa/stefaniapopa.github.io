@@ -34,3 +34,14 @@ function inItMenu(){
 }
 
 inItMenu();
+
+showPage("skills");
+
+var skills = [ "HTML", "CSS", "JavaScript", "Java"];
+
+//to doo add fauvorite skills
+var ul = document.querySelector("#skills ul");
+ul.innerHTML = "<li>" + skills[0] + "</li>"+
+                "<li>" + skills[1] + "</li>"+
+                "<li>" + skills[2] + "</li>"+
+                "<li>" + skills[3] + "</li>";

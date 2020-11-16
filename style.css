@@ -47,10 +47,10 @@ img {
 
 .page{
     background-color: #fff;
-    padding: 24px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
-    margin: 12px 0;
+    margin: 12px 6px 12px 5px;
 }
 
 li {
@@ -103,7 +103,6 @@ h2 {
     align-items: center;
 }
 #header-info {
-    margin-bottom: 0;
     flex: 1;
     padding: 5px;
 }
@@ -122,6 +121,7 @@ h2 {
 
 header, body > section {
     flex: 1; 
+    margin-top: 0;
 } 
 
 header > div{
@@ -133,7 +133,7 @@ header > div{
 }
 
 #content {
-    flex: 4;
+    flex: 30;
     display: flex;
     flex-direction: row;
 }
@@ -160,9 +160,9 @@ button {
     background: linear-gradient(to right,#ff8a00,#e52e71);
 }
 
-button: hover{
+button:hover{
     border-color: #ff8a00;
-    background: linear-gradient(to right, #ff8a00, #e52e71);
+    background:linear-gradient(to right, #ff8a00, #e52e71);
 }
 
 #main {
