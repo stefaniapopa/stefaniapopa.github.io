@@ -5,11 +5,12 @@ body{
 }
 
 #job-title{
+    margin: 0;
     font-size: 30px;
     background: linear-gradient(to top, #ff8a00,#e52e71);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: right;
+    text-align: left;
 }
 
 img {
@@ -91,6 +92,34 @@ body{
     flex-direction: column;
 } 
 
+h2 {
+    margin: 5px 0;
+}
+
+#header-wraper {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#header-info {
+    margin-bottom: 0;
+    flex: 1;
+    padding: 5px;
+}
+
+#my-picture {
+    padding: 5px;
+    width: 108px;
+    height: 100px;
+}
+
+#my-picture img {
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
 header, body > section {
     flex: 1; 
 } 
@@ -110,7 +139,7 @@ header > div{
 }
 
 #side-menu{
-    flex: 1;
+    flex:1;
     padding: 5px;
 }
 

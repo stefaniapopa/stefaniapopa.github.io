@@ -9,19 +9,25 @@
 <body>
 
     <header>
-        <div>
+        <div id="header-wraper">
             <!-- <h1>CV</h1> -->
-            <h2>Stefania <span>Popa</span></h2>
-            <img src="selfie.jpeg" width="100" alt="">
+            <div id="my-picture">
+                <img src="selfie.jpeg" width="100" alt="">
+            </div>
+            <div id="header-info">
 
-            <p id="job-title">Web Developer</p>
+                <h2>Stefania <span>Popa</span></h2>
+
+                <p id="job-title">Web Developer</p>
+
+            </div>
         </div>
 
         <ul id="top-menu-bar">
-            <li><a href="#" onclick="showPage('home')">Home</a></li>
-            <li><a href="#" onclick="showPage('skills')">Skills</a></li>
-            <li><a href="#" onclick="showPage('project')">Projects</a></li>
-            <li><a href="#" onclick="showPage('languages')">Languages</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Languages</a></li>
         </ul>
     </header>
 
@@ -42,7 +48,7 @@
         <div id="main">
             <div id="home" class="page">
                 <h2>Home</h2>
-                Bun venit pe pagina mea. 
+                Bun venit pe pagina mea.
 
             </div>
 
@@ -56,7 +62,7 @@
                 </ul>
             </div>
 
-            <div id="project" class="page" style="display: none;">
+            <div id="projects" class="page" style="display: none;">
                 <h2>Projects</h2>
             </div>
 

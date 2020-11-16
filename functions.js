@@ -16,9 +16,21 @@ function hideAllPages() {
     }
 }
 
-
 function showPage(pageId) {
     hideAllPages();
     document.getElementById(pageId).style.display = "";
 }
 
+function inItMenu(){
+    console.warn("prepare clicks on links");
+    document.addEventListener("click", function(e){
+        var link = e.target;
+        if( link.matches("#top-menu-bar a")){
+            var id = link.innerHTML.toLowerCase();
+            console.info("click", id);
+            showPage(id)
+        }
+    })
+}
+
+inItMenu();
