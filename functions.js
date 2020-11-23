@@ -5,11 +5,11 @@ function hide(id) {
     if (el) {
         el.style.display = "none";
     } else {
-        console.error("elementul nu exista"); 
+        console.error("elementul nu exista");
     }
 }
 
-function hidePreviewPage(){
+function hidePreviewPage() {
     hide(activePage);
     var link = document.querySelector(`#top-menu-bar a[data-page="${activePage}"]`);
     link.classList.remove("active");
@@ -23,11 +23,11 @@ function showPage(pageId) {
     activePage = pageId;
 }
 
-function inItMenu(){
+function inItMenu() {
     console.warn("prepare clicks on links");
-    document.addEventListener("click", function(e){
+    document.addEventListener("click", function (e) {
         var link = e.target;
-        if( link.matches("#top-menu-bar a")){
+        if (link.matches("#top-menu-bar a")) {
             var id = link.getAttribute("data-page");
             showPage(id)
         }
@@ -38,18 +38,21 @@ inItMenu();
 
 showPage(activePage);
 
-var skills = [ 
+var allSkills = [
     { name: "HTML", endorsements: 15 },
-    { name: "CSS", endorsements: 5 }, 
+    { name: "CSS", endorsements: 5 },
     { name: "JavaScript", endorsements: 20 },
     { name: "Java", endorsements: 2 }
 ];
 
-var skillsLi = skills.map(function(skill){
-    var endorsements = ` <span>&middot; ${skill.endorsements}</span>`;
-    return "<li>" + skill.name + endorsements + "</li>";
-});
+function showSkills(skills) {
+    var skillsLi = skills.map(function (skill) {
+        var endorsements = ` <span>&middot; ${skill.endorsements}</span>`;
+        return "<li>" + skill.name + endorsements + "</li>";
+    });
+    //to doo add fauvorite skills
+    var ul = document.querySelector("#skills ul");
+    ul.innerHTML = skillsLi.join("");
+}
 
-//to doo add fauvorite skills
-var ul = document.querySelector("#skills ul");
-ul.innerHTML =  skillsLi.join("");
+showSkills(allSkills);
