@@ -55,7 +55,16 @@ img {
 }
 
 li {
-    color: blueviolet;
+    color:black;
+}
+
+#skills li{
+    font-weight: 800;
+}
+
+#skills li span {
+    font-weight: 200;
+    color: gray;
 }
 
 .favorite {

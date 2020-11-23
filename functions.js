@@ -1,4 +1,4 @@
-var activePage = "home";
+var activePage = "skills";
 
 function hide(id) {
     var el = document.getElementById(id);
@@ -11,12 +11,16 @@ function hide(id) {
 
 function hidePreviewPage(){
     hide(activePage);
+    var link = document.querySelector(`#top-menu-bar a[data-page="${activePage}"]`);
+    link.classList.remove("active");
 }
 
 function showPage(pageId) {
     hidePreviewPage();
     document.getElementById(pageId).style.display = "";
-    activePage = pageId
+    var link = document.querySelector(`#top-menu-bar a[data-page="${pageId}"]`);
+    link.classList.add("active");
+    activePage = pageId;
 }
 
 function inItMenu(){
@@ -24,7 +28,7 @@ function inItMenu(){
     document.addEventListener("click", function(e){
         var link = e.target;
         if( link.matches("#top-menu-bar a")){
-            var id = link.innerHTML.toLowerCase();
+            var id = link.getAttribute("data-page");
             showPage(id)
         }
     })
@@ -35,14 +39,15 @@ inItMenu();
 showPage(activePage);
 
 var skills = [ 
-    "HTML",
-    "CSS", 
-    "JavaScript",
-    "Java"
+    { name: "HTML", endorsements: 15 },
+    { name: "CSS", endorsements: 5 }, 
+    { name: "JavaScript", endorsements: 20 },
+    { name: "Java", endorsements: 2 }
 ];
 
 var skillsLi = skills.map(function(skill){
-    return "<li>" + skill + "</li>";
+    var endorsements = ` <span>&middot; ${skill.endorsements}</span>`;
+    return "<li>" + skill.name + endorsements + "</li>";
 });
 
 //to doo add fauvorite skills
