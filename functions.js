@@ -1,3 +1,5 @@
+var activePage = "home";
+
 function hide(id) {
     var el = document.getElementById(id);
     if (el) {
@@ -7,18 +9,14 @@ function hide(id) {
     }
 }
 
-function hideAllPages() {
-    var pages = document.querySelectorAll(".page");
-    for (var i = 0; i < pages.length; i++) {
-        console.info("i=", i, pages[i]);
-        var id = pages[i].id;
-        hide(id);
-    }
+function hidePreviewPage(){
+    hide(activePage);
 }
 
 function showPage(pageId) {
-    hideAllPages();
+    hidePreviewPage();
     document.getElementById(pageId).style.display = "";
+    activePage = pageId
 }
 
 function inItMenu(){
@@ -27,7 +25,6 @@ function inItMenu(){
         var link = e.target;
         if( link.matches("#top-menu-bar a")){
             var id = link.innerHTML.toLowerCase();
-            console.info("click", id);
             showPage(id)
         }
     })
@@ -35,7 +32,7 @@ function inItMenu(){
 
 inItMenu();
 
-showPage("skills");
+showPage(activePage);
 
 var skills = [ 
     "HTML",
