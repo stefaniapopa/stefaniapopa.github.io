@@ -73,12 +73,6 @@ li {
     color: gray;
 }
 
-.favorite {
-    background: yellow;
-    font-style: italic;
-    color: blue;
-}
-
 html {
     height: 100%;
 }
@@ -200,4 +194,8 @@ footer a{
 
   .fa-github:before{
       font-size: 20px;
+  }
+
+  .favorite{
+      color: blueviolet;
   }
