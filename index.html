@@ -2,104 +2,113 @@
 <html>
 
 <head>
-    <title>My CV</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-
-    <header>
-        <div id="header-wraper">
-            <!-- <h1>CV</h1> -->
-            <div id="my-picture" >
-                <img src="selfie.jpg" width="100" alt="Stefi">
-            </div>
-            <div id="header-info">
-
-                <h2>Stefania <span>Popa</span></h2>
-
-                <p id="job-title">Web Developer</p>
-
-            </div>
+  <header>
+    <div id="header-wraper" class="header">
+      <div id="top-menu-bar">
+        <div id="my-picture">
+          <img src="spopa-logo-cv.png">
         </div>
-
-        <ul id="top-menu-bar">
-            <li><a href="#" data-page="home">Home</a></li>
-            <li><a href="#" data-page="skills">Skills</a></li>
-            <li><a href="#" data-page="projects">Projects</a></li>
-            <li><a href="#" data-page="languages">Languages</a></li>
+        <ul id="menu-bar">
+          <li><a href="#" data-page="home">Home</a></li>
+          <li><a href="#" data-page="skills">Skills</a></li>
+          <li><a href="#" data-page="projects">Projects</a></li>
+          <li><a href="#" data-page="languages">Languages</a></li>
         </ul>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <section id="content">
-        <div id="side-menu">
-            <section>
-                <form action="">
-                    <label for="e">Email</label>
-                    <input type="email" id="e" name="em">
-                    <input type="text" id="name" name="nume" placeholder="Your Name">
-                    <button>
-                        Contact Us
-                    </button>
-                </form>
-            </section>
-            <section>...</section>
-        </div>
-        <div id="main">
-            <div id="home" class="page" style="display: none;">
-                <h2>Home</h2>
-                Bun venit pe pagina mea.
-
-            </div>
-
-            <div id="skills" class="page" style="display: none;">
-                <h2>Skills & Endorcement</h2>
-                <ul>
-                  
-                </ul>
-            </div>
-
-            <div id="projects" class="page" style="display: none;">
-                <h2>Projects</h2>
-            </div>
-
-            <div id="languages" class="page" style="display: none;">
-                <h2>Known Languages</h2>
-                <table border="1">
-
-                    <tr>
-                        <td>Engleza</td>
-                        <td>Mediu</td>
-                    </tr>
-                    <tr>
-                        <td>Romana</td>
-                        <td>Matern</td>
-                    </tr>
-                    <tr>
-                        <td>Franceza</td>
-                        <td>Incepator</td>
-                    </tr>
-                </table><br>
-            </div>
-
-        </div>
+  <section id="content">
+    <section id="page-wraper">
+      <section id="main" class="leftcolumn">
+      </section>
     </section>
 
-    <footer>
-        <a target="_blank" href="https://www.linkedin.com/in/stefania-popa-533540163/" class="fa fa-linkedin"> </a>
-        <a target="_blank" href="https://github.com/stefaniapopa" class="fa fa-github" aria-hidden="true"></a>
-    </footer>
+    <section class="rightcolumn">
+      <div class="row">
+        <div id="main">
+          <div id="home" style="display: none;">
+            <div id="my-home-pic" class="page">
+              <h1><strong>
+                  Welcome to my CV<br>
+                  If you want to find out more check my page
+                </strong></h1>
+            </div>
 
-    <script src="functions.js"></script>
+          </div>
 
-    <script>
-        // console.info("salut!");
-        // var name = "Stefania";
-        // console.info(name);
-        // var skills = ["html", "css", "js"];
-        // console.info(skills);
-    </script>
+          <div id="skills" style="display: none;">
+            <div id="my-skill-pic" class="page">
+              <div class="d-flex flex-column align-items-center">
+                <h2>Skills & Endorcement</h2>
+                <ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="projects" style="display: none;">
+            <div id="my-prj-pic" class="page">
+              <div class="d-flex flex-column align-items-center">
+                <h2>Check my GitHub</h2>
+                <div id="gitSize">
+                  <a target="_blank" href="https://github.com/stefaniapopa" class="fa fa-github" aria-hidden="true"
+                    style="color:indigo"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="languages" style="display: none;">
+            <div id="my-lng-pic" class="page">
+              <div class="d-flex flex-column align-items-center">
+                <table id="list">
+                  <thead>
+                    <tr>
+                      <th>Known Languages</th>
+                      <th> </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Engleza</td>
+                      <td>Mediu</td>
+                    </tr>
+                    <tr>
+                      <td>Romana</td>
+                      <td>Matern</td>
+                    </tr>
+                    <tr>
+                      <td>Franceza</td>
+                      <td>Incepator</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <footer>
+    <a target="_blank" href="https://www.linkedin.com/in/stefania-popa-533540163/" class="fa fa-linkedin"> </a>
+  </footer>
+
+  <script src="functions.js"></script>
+
 </body>
 
 </html>
